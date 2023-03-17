@@ -1,0 +1,13 @@
+<div class="container">
+  <input type="text" placeholder="search item" class="form-control" [(ngModel)]="searchText" (ngModelChange)="onFilterBOxChange()">
+</div>
+<ag-grid-angular style="width: 100%; height: 500px;"
+class="ag-theme-alpine"
+[rowData]="rowData"
+[columnDefs]="columnDefs"
+[pagination]="true"
+[paginationPageSize]="10" 
+(gridReady)="onGridReady1($event)">
+
+</ag-grid-angular>
+   
